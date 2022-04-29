@@ -21,7 +21,6 @@ app.get('/', (req, res) => {
 
 app.get('/livros', (req, res) => {
     livros.find((err, livros) => {
-        console.log(livros);
         res.status(200).json(livros);
     })
 })
